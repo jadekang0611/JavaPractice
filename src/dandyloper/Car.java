@@ -26,10 +26,30 @@ public class Car {
         isTheCarOn = customIsTheCarOn;
     }
 
-    public void upgradeMinSpeed() {
-        minSpeed = maxSpeed;
-        maxSpeed = maxSpeed + 1;
+    // Getters and Setters
+    public int getMaxSpeed() {
+        return this.maxSpeed;
+    }
 
+    public void setMaxSpeed(int newMaxSpeed) {
+        this.maxSpeed = newMaxSpeed;
+    }
+
+    public int getMinSpeed() {
+        return this.minSpeed;
+    }
+
+    public double getWeight() {
+        return this.weight;
+    }
+
+    public boolean getIsTheCarOn() {
+        return this.isTheCarOn;
+    }
+
+
+    public void upgradeMaxSpeed() {
+        setMaxSpeed(getMaxSpeed() + 10);
     }
 
     public void getIn() {
